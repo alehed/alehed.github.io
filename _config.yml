@@ -6,7 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: NatilusCode the mobile code editor
+title: NatilusCode
+tagline: the mobile code editor
 email: your-email@domain.com
 description: >
   NautilusCode the mobile code editor. With full git integration it lets
