@@ -47,6 +47,26 @@ img {
     vertical-align: middle;
 }
 
+.lanscape-device {
+    position: relative;
+    
+    .lanscape-screenshot {
+      position: absolute;
+      left: 20px;
+      top: 40px;
+    }
+}
+
+.portrait-device {
+    position: relative;
+    
+    .portrait-screenshot {
+      position: absolute;
+      left: 40px;
+      top: 70px;
+    }
+}
+
 
 
 /**
@@ -195,12 +215,12 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        // width: 16px;
+        height: 40px;
         vertical-align: middle;
 
-        path {
-            fill: $grey-color;
-        }
+        // path {
+        //     fill: $grey-color;
+        // }
     }
 }

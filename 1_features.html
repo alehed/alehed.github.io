@@ -11,7 +11,7 @@ permalink: /features/
     {% for feature in site.features %}
       <li>
         {% if feature.image_name %}
-        <img src="/assets/{{ feature.image_name }}.jpg"> <!-- srcset="assets/{{ feature.image_name }}_HD.jpg 2x, assets/{{ post.image_name }}_sm.jpg 100w, assets/{{ post.image_name }}_smHD.jpg 100w 2x" -->
+          {% include landscape_screenshot.html name=feature.image_name %}
         {% endif %}
         <h2>
           {{ feature.title }}
