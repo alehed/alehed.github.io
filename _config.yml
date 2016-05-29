@@ -16,6 +16,7 @@ baseurl: ""
 url: "http://www.nautiluscode.ch" # the base hostname & protocol for your site
 timezone: Europe/Zurich
 github_username: alehed
+app_store_url: "https://itunes.apple.com/ch/app/itunes-u/id490217893?l=en&mt=8" # change!
 
 # Build settings
 markdown: kramdown

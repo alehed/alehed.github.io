@@ -3,6 +3,13 @@ layout: page
 image_name: git_integration
 ---
 
-This is the content!
+In our modern world your ability to write code shouldn't be confined to you office. Imagine you could take your code with you wherever you go.
 
-HI
+NautilusCode for iPad lets you do just that. With it's super slick git integration you have access to all your git repositories so it will fit perfectly into your developing workflow.
+
+It's main features are:
+
+* Fully Functional File Organizer
+* Edit in Split View
+* Git Integration
+* Syntax Highlighting

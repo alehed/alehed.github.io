@@ -10,7 +10,9 @@ permalink: /features/
   <ul class="feature-list">
     {% for feature in site.features %}
       <li>
+        {% if feature.image_name %}
         <img src="/assets/{{ feature.image_name }}.jpg"> <!-- srcset="assets/{{ feature.image_name }}_HD.jpg 2x, assets/{{ post.image_name }}_sm.jpg 100w, assets/{{ post.image_name }}_smHD.jpg 100w 2x" -->
+        {% endif %}
         <h2>
           {{ feature.title }}
         </h2>
