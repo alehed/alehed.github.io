@@ -1,0 +1,24 @@
+---
+title: Features
+permalink: /features/
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Features</h1>
+
+  <ul class="feature-list">
+    {% for feature in site.features %}
+      <li>
+        <img src="/assets/{{ feature.image_name }}.jpg"> <!-- srcset="assets/{{ feature.image_name }}_HD.jpg 2x, assets/{{ post.image_name }}_sm.jpg 100w, assets/{{ post.image_name }}_smHD.jpg 100w 2x" -->
+        <h2>
+          {{ feature.title }}
+        </h2>
+        <p>
+          {{ feature.content }}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
