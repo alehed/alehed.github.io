@@ -49,23 +49,37 @@ img {
 
 .lanscape-device {
     position: relative;
-    
+    float: inherit;
+    padding: 20px;
+    padding-top: 0.5*$spacing-unit;
+    padding-bottom: 1.5*$spacing-unit;
+
     .lanscape-screenshot {
       position: absolute;
-      left: 20px;
-      top: 40px;
+      padding: inherit;
+      width: 255px;
+      height: 191px;
+      left: 30px;
+      top: 16px;
     }
 }
 
 .portrait-device {
     position: relative;
-    
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 1.5*$spacing-unit;
+
     .portrait-screenshot {
       position: absolute;
-      left: 40px;
-      top: 70px;
+      padding: inherit;
+      width: 295px;
+      height: 393px;
+      left: 22px;
+      top: 45px;
     }
 }
+
 
 
 
@@ -90,6 +104,7 @@ ul, ol {
 }
 
 li {
+    list-style-position: inside;
     > ul,
     > ol {
          margin-bottom: 0;
@@ -120,7 +135,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -176,20 +190,20 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: $content-width;
+    min-width: 0.95*$content-width;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+    // @include media-query($on-laptop) {
+    //     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    //     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    //     padding-right: $spacing-unit / 2;
+    //     padding-left: $spacing-unit / 2;
+    // }
 }
 
 
@@ -209,18 +223,19 @@ pre {
 
 
 /**
- * Icons
+ * Badges
  */
-.icon {
+ .badge {
+
+   > svg {
+     display: inline-block;
+     vertical-align: middle;
+   }
+ }
+
+.badge--appstore {
 
     > svg {
-        display: inline-block;
-        // width: 16px;
         height: 40px;
-        vertical-align: middle;
-
-        // path {
-        //     fill: $grey-color;
-        // }
     }
 }

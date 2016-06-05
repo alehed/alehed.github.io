@@ -8,7 +8,7 @@
 # Site settings
 title: NatilusCode
 tagline: the mobile code editor
-email: your-email@domain.com
+email: ahedges(at)ethz.ch
 description: >
   NautilusCode the mobile code editor. With full git integration it lets
   you integrate your iPad into your development workflow.
@@ -31,4 +31,4 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default"
+      layout: "page"

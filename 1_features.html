@@ -3,15 +3,24 @@ title: Features
 permalink: /features/
 ---
 
-<div class="home">
+<div class="page">
 
-  <h1 class="page-heading">Features</h1>
-
-  <ul class="feature-list">
+  <div class="feature-list">
+    {% assign image_left = true %}
     {% for feature in site.features %}
-      <li>
+      <div class="feature">
         {% if feature.image_name %}
-          {% include landscape_screenshot.html name=feature.image_name %}
+          {% if image_left == true %}
+            <div class="image-left">
+              {% include landscape_screenshot.html name=feature.image_name %}
+            </div>
+            {% assign image_left = false %}
+          {% else %}
+            <div class="image-right">
+              {% include landscape_screenshot.html name=feature.image_name %}
+            </div>
+            {% assign image_left = true %}
+          {% endif %}
         {% endif %}
         <h2>
           {{ feature.title }}
@@ -19,8 +28,8 @@ permalink: /features/
         <p>
           {{ feature.content }}
         </p>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 
 </div>

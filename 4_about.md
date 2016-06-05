@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About
 permalink: /about/
 ---
@@ -11,4 +10,4 @@ I'm a student at the ETH Zürich who loves to code.
 ### Support
 
 For support requests, feedback or other inquiries please
-contact me at ahedges(at)ethz.ch.
+contact me at {{ site.email }}.

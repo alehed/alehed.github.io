@@ -1,0 +1,18 @@
+<nav class="site-nav">
+  <div class="links">
+    {% if page.title %}
+      <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+    {% else %}
+      <a class="page-link" href="{{ site.baseurl }}/"><span class="page-self-link">Home</span></a>
+    {% endif %}
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+        {% if my_page.title == page.title %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"><span class="page-self-link">{{ my_page.title }}</span></a>
+        {% else %}
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</nav>

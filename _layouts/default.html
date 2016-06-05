@@ -9,7 +9,11 @@
 
     <div class="page-content">
       <div class="wrapper">
-        {{ content }}
+        <div class="page-body">
+          {% include navbar.html %}
+
+          {{ content }}
+        </div>
       </div>
     </div>
 

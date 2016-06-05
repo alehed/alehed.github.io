@@ -1,5 +1,4 @@
 ---
-layout: page
 image_name: showcase
 ---
 
