@@ -6,29 +6,44 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-font-family:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:          16px;
+$base-font-weight:        400;
+$small-font-size:         $base-font-size * 0.875;
+$base-line-height:        1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:            30px;
 
-$text-color:       #111;
-$background-dark-blue: #fdfdfd;
-$background-light-blue: #63b577;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// App color palette
+$color-blue-light:        #46bce1;
+$color-blue-dark:         #165a94; // actually #3475ac
+$color-blue-saphire:      #4863e2;
+$color-purple:            #b06dff;
+$color-pink:              #ea83e5;
+$color-red:               #ff5867;
+$color-brown:             #c37651;
+$color-savannah:          #f3ab53;
+$color-yellow:            #ffdc51;
+$color-green-light:       #cae156;
+$color-green-mid:         #66d458;
+$color-green-dark:        #00a557;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$color-grey:              #828282;
+$color-grey-light:        lighten($color-grey, 40%);
+$color-grey-dark:         darken($color-grey, 25%);
+
+$text-color:              #282828;
+$background-blue-light:   #4FADF6;
+$background-blue-dark:    #0461CC;
+$background-color-light:  lighten(#EDE1D4, 5%);
+$background-color:        $background-blue-dark;
+$brand-color:             $color-grey-dark;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:           800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:                 600px;
+$on-laptop:               800px;
 
 
 

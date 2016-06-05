@@ -2,9 +2,9 @@
 image_name: showcase
 ---
 
-In our modern world your ability to write code shouldn't be confined to you office. Imagine you could take your code with you wherever you go.
+In our modern world the ability to write code shouldn't be confined to an office. Imagine you could take your code with you, wherever you go.
 
-NautilusCode for iPad lets you do just that. With it's super slick git integration you have access to all your git repositories so it will fit perfectly into your development workflow.
+NautilusCode for iPad lets you do just that. With it's super slick git integration you can have all your git repositories right at your fingertips so it fits perfectly into the development workflow.
 
 It's main features are:
 

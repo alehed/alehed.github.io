@@ -3,11 +3,11 @@ title: About
 permalink: /about/
 ---
 
-### About me
+## About me
 
 I'm a student at the ETH Zürich who loves to code.
 
-### Support
+## Support
 
 For support requests, feedback or other inquiries please
 contact me at {{ site.email }}.

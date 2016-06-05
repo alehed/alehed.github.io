@@ -3,9 +3,7 @@
  */
 .site-header {
     min-height: 300px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
+    background: linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
 }
 
 .site-logo {
@@ -15,9 +13,10 @@
 
 .site-title {
     text-align: right;
-    font-size: 4em;
-    font-weight: 300;
-    // letter-spacing: -1px;
+    font-size: 4.4em;
+    // font-weight: 300;
+    font-family: "FONTSPRING DEMO - Carnac Thin"; //Sonus-ExtraLight Carnac Thin
+    color: $color-blue-dark;
     padding-top: 3*$spacing-unit;
     padding-right: $spacing-unit;
 }
@@ -25,7 +24,11 @@
 .site-subtitle {
     text-align: right;
     font-size: 1.5em;
-    font-weight: 500;
+    // font-weight: 500;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "FONTSPRING DEMO - Carnac"; //Sonus-LightIt Carnac Light
+    color: lighten($color-blue-light, 5%);
     padding-right: $spacing-unit;
 }
 
@@ -40,15 +43,13 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
+    color: $brand-color;
     @extend %clearfix;
 }
 
 .footer-col {
-    float: left;
+    display: inline-block;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
@@ -88,19 +89,21 @@
 
     text-align: center;
     font-size: 1.1em;
+    font-family: "FONTSPRING DEMO - Carnac Medium"; //Sonus-Medium Carnac Medium
     margin-top: 0.5*$spacing-unit;
     margin-bottom: 1.5*$spacing-unit;
+    border-bottom: 1px solid $color-grey;
 
     > .links {
       display: inline-block;
       padding-bottom: 0.8*$spacing-unit;
-      border-bottom: 1px solid $grey-color-light;
+      // border-bottom: 1px solid $color-grey;
     }
 
     .page-self-link {
         padding-bottom: 3px;
-        border-bottom: 2.5px solid #338be3;
-        color: #338be3;
+        border-bottom: 2.5px solid $color-blue-dark;
+        color: $color-blue-dark;
     }
 
     .page-link {
@@ -118,7 +121,7 @@
     //     top: 9px;
     //     right: $spacing-unit / 2;
     //     background-color: $background-color;
-    //     border: 1px solid $grey-color-light;
+    //     border: 1px solid $color-grey-light;
     //     border-radius: 5px;
     //     text-align: right;
     //
@@ -136,7 +139,7 @@
     //             height: 15px;
     //
     //             path {
-    //                 fill: $grey-color-dark;
+    //                 fill: $color-grey-dark;
     //             }
     //         }
     //     }
@@ -168,10 +171,10 @@
 /**
  * Page content
  */
-.page-body {
-    border: 2px solid $grey-color-light;
-    border-radius: 20px;
-    // text-align: center;
+.page-content {
+    border: 1px solid $color-grey;
+    border-radius: 10px;
+    background-color: $background-color-light;
     min-height: 650px;
     padding: 1.5*$spacing-unit;
     padding-top: 0.3*$spacing-unit;
@@ -180,13 +183,14 @@
 }
 
 .page {
-    // h2 {
-    //     font-size: 32px;
-    //
-    //     // @include media-query($on-laptop) {
-    //     //     font-size: 28px;
-    //     // }
-    // }
+    h2 {
+        // font-size: 32px;
+        font-family: "FONTSPRING DEMO - Carnac Light";
+
+        // @include media-query($on-laptop) {
+        //     font-size: 28px;
+        // }
+    }
 }
 
 .feature-list {
