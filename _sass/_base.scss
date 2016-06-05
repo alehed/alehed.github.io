@@ -191,11 +191,11 @@ pre {
  */
 .wrapper {
     max-width: $content-width;
-    min-width: 0.95*$content-width;
+    min-width: 0.9*$content-width;
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: 0.5*$spacing-unit;
+    padding-left: 0.5*$spacing-unit;
     @extend %clearfix;
 
     // @include media-query($on-laptop) {
