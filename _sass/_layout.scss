@@ -18,15 +18,11 @@
      // }
  }
 
- 
+
 
 /**
  * Site header
  */
-.site-header {
-    background: linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
-}
-
 .site-logo {
     float: left;
     margin: $spacing-unit;
@@ -60,15 +56,11 @@
 .footer-col-1 {
     text-align: left;
     width: 70%;
-    // width: -webkit-calc(70% - (#{$spacing-unit} / 2));
-    // width:         calc(70% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
     text-align: right;
     width: 30%;
-    // width: -webkit-calc(30% - (#{$spacing-unit} / 2));
-    // width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 // @include media-query($on-laptop) {
@@ -93,7 +85,6 @@
  * Site navigation bar
  */
 .site-nav {
-
     text-align: center;
     margin-top: 0.5*$spacing-unit;
     margin-bottom: 1.5*$spacing-unit;
@@ -116,55 +107,6 @@
             margin-right: 20px;
         }
     }
-
-    // @include media-query($on-palm) {
-    //     position: absolute;
-    //     top: 9px;
-    //     right: $spacing-unit / 2;
-    //     background-color: $background-color;
-    //     border: 1px solid $color-grey-light;
-    //     border-radius: 5px;
-    //     text-align: right;
-    //
-    //     .menu-icon {
-    //         display: block;
-    //         float: right;
-    //         width: 36px;
-    //         height: 26px;
-    //         line-height: 0;
-    //         padding-top: 10px;
-    //         text-align: center;
-    //
-    //         > svg {
-    //             width: 18px;
-    //             height: 15px;
-    //
-    //             path {
-    //                 fill: $color-grey-dark;
-    //             }
-    //         }
-    //     }
-    //
-    //     .links {
-    //         clear: both;
-    //         display: none;
-    //     }
-    //
-    //     &:hover .links {
-    //         display: block;
-    //         padding-bottom: 5px;
-    //     }
-    //
-    //     .page-link {
-    //         display: block;
-    //         padding: 5px 10px;
-    //
-    //         &:not(:last-child) {
-    //             margin-right: 0;
-    //         }
-    //         margin-left: 20px;
-    //     }
-    // }
 }
 
 
