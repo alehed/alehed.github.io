@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family:        "FONTSPRING DEMO - Carnac", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family:        "FONTSPRING DEMO - Carnac", sans-serif;
 $base-font-size:          16px;
 $base-font-weight:        400;
 $small-font-size:         $base-font-size * 0.875;
@@ -15,7 +15,7 @@ $base-line-height:        1.5;
 $spacing-unit:            30px;
 
 // App color palette
-$color-blue-light:        #46bce1;
+$color-blue-light:        #46bce1; // or lighten(#46bce1, 5%);
 $color-blue-dark:         #165a94; // actually #3475ac
 $color-blue-saphire:      #4863e2;
 $color-purple:            #b06dff;
