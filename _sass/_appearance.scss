@@ -1,0 +1,71 @@
+/**
+ * Site header
+ */
+.site-header {
+    background: linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
+}
+
+.site-title {
+    font-size: 4.4em;
+    // font-weight: 300;
+    font-family: "FONTSPRING DEMO - Carnac Thin";
+    color: $color-blue-dark;
+}
+
+.site-subtitle {
+    font-size: 1.5em;
+    // font-weight: 500;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "FONTSPRING DEMO - Carnac";
+    color: lighten($color-blue-light, 5%);
+}
+
+
+
+/**
+ * Site footer
+ */
+
+ .site-footer {
+     font-size: 15px;
+     color: $brand-color;
+ }
+
+
+
+/**
+ * Site navigation bar
+ */
+.site-nav {
+    font-size: 1.1em;
+    font-family: "FONTSPRING DEMO - Carnac Medium";
+    border-bottom: 1px solid $color-grey;
+
+    .page-self-link {
+        border-bottom: 2.5px solid $color-blue-dark;
+        color: $color-blue-dark;
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    border: 1px solid $color-grey;
+    border-radius: 10px;
+    background-color: $background-color-light;
+}
+
+.page {
+    h2 {
+        // font-size: 32px;
+        font-family: "FONTSPRING DEMO - Carnac Light";
+
+        // @include media-query($on-laptop) {
+        //     font-size: 28px;
+        // }
+    }
+}

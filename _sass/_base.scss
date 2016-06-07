@@ -8,13 +8,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} "FONTSPRING DEMO - Carnac"; //Sonus-Regular Carnac
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -40,80 +38,6 @@ ul, ol, dl, figure,
 
 
 /**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-.lanscape-device {
-    position: relative;
-    float: inherit;
-    padding: 20px;
-    padding-top: 0.5*$spacing-unit;
-    padding-bottom: 1.5*$spacing-unit;
-
-    .lanscape-screenshot {
-      position: absolute;
-      padding: inherit;
-      width: 255px;
-      height: 191px;
-      left: 30px;
-      top: 16px;
-    }
-}
-
-.portrait-device {
-    position: relative;
-    float: left;
-    padding-right: 40px;
-    padding-bottom: 1.5*$spacing-unit;
-
-    .portrait-screenshot {
-      position: absolute;
-      padding: inherit;
-      width: 295px;
-      height: 393px;
-      left: 22px;
-      top: 45px;
-    }
-}
-
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    list-style-position: inside;
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
@@ -133,18 +57,70 @@ a {
 
 
 /**
- * Blockquotes
+ * Blockquote
  */
 blockquote {
     color: $color-grey;
     border-left: 4px solid $color-grey-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Badges
+ */
+.badge {
+
+   > svg {
+     display: inline-block;
+     vertical-align: middle;
+   }
+ }
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    list-style-position: inside;
+    > ul,
+    > ol {
+         margin-bottom: 0;
     }
 }
 
@@ -179,28 +155,6 @@ pre {
 
 
 /**
- * Wrapper
- */
-.wrapper {
-    max-width: $content-width;
-    min-width: 0.9*$content-width;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 0.5*$spacing-unit;
-    padding-left: 0.5*$spacing-unit;
-    @extend %clearfix;
-
-    // @include media-query($on-laptop) {
-    //     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    //     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    //     padding-right: $spacing-unit / 2;
-    //     padding-left: $spacing-unit / 2;
-    // }
-}
-
-
-
-/**
  * Clearfix
  */
 %clearfix {
@@ -209,25 +163,5 @@ pre {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-
-
-/**
- * Badges
- */
- .badge {
-
-   > svg {
-     display: inline-block;
-     vertical-align: middle;
-   }
- }
-
-.badge--appstore {
-
-    > svg {
-        height: 40px;
     }
 }
