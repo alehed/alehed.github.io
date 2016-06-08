@@ -1,7 +1,37 @@
 /**
- * General Layout
+ * Stretch main to fit site height
  */
- .wrapper {
+html, body {
+    height: 100%;
+    margin: 0pt;
+}
+
+body {
+    display: table;
+    width: 100%;
+    > * {
+        display: table-row;
+        height: 1px;
+        overflow: hidden;
+    }
+}
+
+.site-main {
+    height: 100%;
+    > .wrapper {
+        height: inherit;
+    }
+}
+
+.main-content {
+    padding: 0px 1.5*$spacing-unit;
+    height: inherit;
+}
+
+/**
+ * Wrapper for content of header, main and footer
+ */
+.wrapper {
      max-width: $content-width;
      min-width: 0.9*$content-width;
      margin-right: auto;
@@ -28,6 +58,10 @@
     margin: $spacing-unit;
 }
 
+.site-title-wrapper {
+
+}
+
 .site-title {
     text-align: right;
     padding-top: 3*$spacing-unit;
@@ -44,9 +78,9 @@
 /**
  * Site footer
  */
-.site-footer {
-    margin-top: 0.5*$spacing-unit;
-    margin-bottom: 0.5*$spacing-unit;
+.footer-content {
+    padding-top: 0.5*$spacing-unit;
+    padding-bottom: 0.5*$spacing-unit;
 }
 
 .footer-col {
@@ -86,12 +120,12 @@
  */
 .site-nav {
     text-align: center;
-    margin-top: 0.5*$spacing-unit;
-    margin-bottom: 1.5*$spacing-unit;
+    margin-top: 0.8*$spacing-unit;
+    margin-bottom: 0.5*$spacing-unit;
 
     > .links {
-      display: inline-block;
-      padding-bottom: 0.8*$spacing-unit;
+        display: inline-block;
+        padding-bottom: 0.8*$spacing-unit;
     }
 
     .page-self-link {
@@ -114,12 +148,8 @@
 /**
  * Page content
  */
-.page-content {
-    min-height: 650px;
-    padding: 1.5*$spacing-unit;
-    padding-top: 0.3*$spacing-unit;
-    padding-bottom: 0.3*$spacing-unit;
-    @extend %clearfix;
+.page {
+    padding: $spacing-unit 0px;
 }
 
 .feature-list {
