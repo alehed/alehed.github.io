@@ -1,5 +1,5 @@
 ---
-image_name: showcase
+image_name: portrait
 ---
 
 In our modern world the ability to write code shouldn't be confined to an office. Imagine you could take your code with you, wherever you go.

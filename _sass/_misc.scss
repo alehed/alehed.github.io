@@ -1,36 +1,70 @@
 /**
  * Device Screenshots
  */
-.lanscape-device {
+.landscape-device {
     position: relative;
     float: inherit;
-    padding: 20px;
-    padding-top: 0.5*$spacing-unit;
-    padding-bottom: 1.5*$spacing-unit;
 
-    .lanscape-screenshot {
-      position: absolute;
-      padding: inherit;
-      width: 255px;
-      height: 191px;
-      left: 30px;
-      top: 16px;
+    .landscape-screenshot {
+        position: absolute;
+        padding: inherit;
+        width: 255px;
+        height: 191px;
+        left: 30px;
+        top: 16px;
+    }
+
+    @include media-query($on-portable) {
+        > img {
+            width: 260px;
+        }
+
+        .landscape-screenshot {
+            width: 210px;
+            height: 158px;
+            left: 25px;
+            top: 13px;
+        }
+    }
+
+    @include media-query($on-mobile) {
+        > img {
+            width: 200px;
+        }
+
+        .landscape-screenshot {
+            width: 164px;
+            height: 122px;
+            left: 19px;
+            top: 10px;
+        }
     }
 }
 
-.portrait-device {
-    position: relative;
+.content-image {
     float: left;
-    padding-right: 40px;
-    padding-bottom: 1.5*$spacing-unit;
+    margin: 0px 4% 7% 0px;
 
-    .portrait-screenshot {
-      position: absolute;
-      padding: inherit;
-      width: 295px;
-      height: 393px;
-      left: 22px;
-      top: 45px;
+    > img {
+        width: 360px;
+
+        @include media-query($on-portable) {
+            width: 290px;
+        }
+
+        @include media-query($on-mobile) {
+            width: 240px;
+        }
+    }
+
+    @include media-query($on-mobile-portrait) {
+        float: none;
+        margin: 0px 0px 0.5*$spacing-unit 0px;
+
+        > img {
+            display: block;
+            margin: auto;
+        }
     }
 }
 

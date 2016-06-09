@@ -21,6 +21,14 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+
+    @include media-query($on-portable) {
+        font-size: $portable-font-size;
+    }
+
+    @include media-query($on-mobile) {
+        font-size: $mobile-font-size;
+    }
 }
 
 
@@ -77,7 +85,7 @@ blockquote {
  * Images
  */
 img {
-    max-width: 100%;
+    max-height: 100%;
     vertical-align: middle;
 }
 
@@ -91,7 +99,7 @@ figure > img {
 }
 
 figcaption {
-    font-size: $small-font-size;
+    font-size: 0.8em;
 }
 
 
@@ -113,7 +121,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin-left: 10%;
 }
 
 li {

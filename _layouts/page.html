@@ -2,9 +2,9 @@
 layout: default
 ---
 <div class="page">
-  
+
   {% if page.image_name %}
-    {% include portrait_screenshot.html name=page.image_name %}
+    {% include image.html name=page.image_name %}
   {% endif %}
 
   {{ content }}
