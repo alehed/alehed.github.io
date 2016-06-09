@@ -1,0 +1,18 @@
+{% if include.side == "left" %}
+  <div class="feature-image">
+    {% include landscape_screenshot.html name=feature.image_name %}
+  </div>
+{% endif %}
+<div class="feature-description">
+  <h2>
+    {{ feature.title }}
+  </h2>
+  <p>
+    {{ feature.content }}
+  </p>
+</div>
+{% if include.side == "right" %}
+  <div class="feature-image">
+    {% include landscape_screenshot.html name=feature.image_name %}
+  </div>
+{% endif %}

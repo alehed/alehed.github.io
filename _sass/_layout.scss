@@ -165,21 +165,49 @@ body {
     @extend %clearfix;
 }
 
-.feature-list {
-    margin-left: 0;
-
-    > .feature {
-        clear: both;
-        margin-bottom: 2*$spacing-unit;
+.feature {
+    display: table;
+    margin-bottom: 7%;
+    @include media-query($on-mobile-portrait) {
+        display: block;
+        margin-bottom: 10%;
     }
 }
 
-.image-right {
-    // padding-left: 2*$spacing-unit;
-    float: right;
+.feature-list :last-child {
+    margin-bottom: 0px;
 }
 
-.image-left {
-    // padding-right: 2*$spacing-unit;
-    float: left;
+.feature-description {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    padding: 0px 5%;
+    @include media-query($on-portable) {
+        padding: 0px 3%;
+    }
+    @include media-query($on-mobile) {
+        width: 60%;
+    }
+    @include media-query($on-mobile-portrait) {
+        display: table-footer-group;
+        width: 100%;
+    }
+}
+
+.feature-image {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 5%;
+    width: 50%;
+
+    @include media-query($on-portable) {
+        width: 40%;
+        padding: 0px;
+    }
+    @include media-query($on-mobile-portrait) {
+        display: table-caption;
+        // HACK: for centering
+        padding: 0px 0px 4% calc(47% - 95px);
+    }
 }

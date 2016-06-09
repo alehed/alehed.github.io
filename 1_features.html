@@ -6,26 +6,20 @@ permalink: /features/
 <div class="feature-list">
   {% assign image_left = true %}
   {% for feature in site.features %}
-    <div class="feature">
-      {% if feature.image_name %}
+    {% if feature.image_name %}
+      <div class="feature">
         {% if image_left == true %}
-          <div class="image-left">
-            {% include landscape_screenshot.html name=feature.image_name %}
-          </div>
+          {% include feature-content.html side="left"%}
           {% assign image_left = false %}
         {% else %}
-          <div class="image-right">
-            {% include landscape_screenshot.html name=feature.image_name %}
-          </div>
+          {% include feature-content.html side="right"%}
           {% assign image_left = true %}
         {% endif %}
-      {% endif %}
-      <h2>
-        {{ feature.title }}
-      </h2>
-      <p>
-        {{ feature.content }}
-      </p>
-    </div>
+      </div>
+    {% else %}
+      <div class="feature text-feature">
+        {% include feature-content.html side="none"%}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
