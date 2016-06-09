@@ -42,7 +42,8 @@ $background-color:        $background-blue-dark;
 $brand-color:             $color-grey-dark;
 
 // Width of the content area
-$content-width:           800px;
+$max-header-width:        800px;
+$max-content-width:       1000px;
 
 $on-mobile-portrait:      450px;
 $on-mobile:               600px;

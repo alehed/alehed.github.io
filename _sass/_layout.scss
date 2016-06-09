@@ -32,11 +32,16 @@ body {
  * Wrapper for content of header, main and footer
  */
 .wrapper {
-     max-width: $content-width;
-     margin-right: auto;
-     margin-left: auto;
-     padding-right: 0.5*$spacing-unit;
-     padding-left: 0.5*$spacing-unit;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+
+    @include media-query($on-portable) {
+        padding-right: 0.5*$spacing-unit;
+        padding-left: 0.5*$spacing-unit;
+    }
 }
 
 
@@ -44,6 +49,10 @@ body {
 /**
  * Site header
  */
+ .site-header > .wrapper {
+      max-width: $max-header-width;
+ }
+
 .header-content-wrapper {
     position: relative;
     padding-bottom: 38%;
@@ -51,7 +60,7 @@ body {
 }
 
 .header-content {
-    max-width: $content-width;
+    max-width: $max-header-width;
     position: absolute;
     width: 100%;
     height: 100%;
