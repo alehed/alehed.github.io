@@ -8,7 +8,7 @@ NautilusCode for iPad lets you do just that. With it's super slick git integrati
 
 It's main features are:
 
-* Fully Functional File Organizer
+* File Organizer
 * Edit in Split View
 * Git Integration
 * Syntax Highlighting

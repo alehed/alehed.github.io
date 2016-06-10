@@ -1,8 +1,8 @@
 ---
-title:  "First Class Git Integration"
+title:  "First-Class Git Integration"
 image_name: git_diff
 ---
 
-Git is deeply integrated into NautilusCode so you can use it to clone your favorite repository and work on the code right from your device. With support for branching workflows there is no limit to what you can do. And when you are ready, just push the changes back to the server.
+Git is deeply integrated into NautilusCode. To get started all you need to do is clone a remote repository.
 
-No add-ons or additional apps required.
+It has options to let you view the current diff and choose what you commit with fine-grained control. Also, with local branching it supports pretty much every workflow.

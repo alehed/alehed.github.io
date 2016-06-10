@@ -62,14 +62,13 @@
     float: left;
     padding: 4% 0px;
 
-    > a > svg {
+    a svg {
         display: inline-block;
-        height: 40px;
     }
 
     @include media-query($on-mobile) {
         float: none;
-        > a {
+        a {
             display: block;
             svg {
                 display: inherit;

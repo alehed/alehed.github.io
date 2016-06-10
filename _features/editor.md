@@ -1,5 +1,5 @@
 ---
-title:  "Everything you'd expect from a Text Editor"
+title:  "Everything you’d expect from a Text Editor"
 image_name: editor
 ---
 
