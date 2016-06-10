@@ -13,7 +13,4 @@ It's main features are:
 * Git Integration
 * Syntax Highlighting
 
-
-<div>
 {% include app_store_badge.html url=site.app_store_url %}
-</div>

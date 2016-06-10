@@ -59,7 +59,22 @@
  */
 .badge--appstore {
 
-    > svg {
+    float: left;
+    padding: 4% 0px;
+
+    > a > svg {
+        display: inline-block;
         height: 40px;
+    }
+
+    @include media-query($on-mobile) {
+        float: none;
+        > a {
+            display: block;
+            svg {
+                display: inherit;
+                margin: auto;
+            }
+        }
     }
 }
