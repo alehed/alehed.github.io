@@ -141,6 +141,8 @@ pre,
 code {
     font-size: 15px;
     border: 1px solid $color-grey-light;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #eef;
 }

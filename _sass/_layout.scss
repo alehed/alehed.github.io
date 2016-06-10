@@ -49,9 +49,9 @@ body {
 /**
  * Site header
  */
- .site-header > .wrapper {
-      max-width: $max-header-width;
- }
+.site-header > .wrapper {
+    max-width: $max-header-width;
+}
 
 .header-content-wrapper {
     position: relative;
@@ -92,6 +92,7 @@ body {
     position: relative;
     top: 20%;
     text-align: right;
+    padding-right: 1%;
 }
 
 

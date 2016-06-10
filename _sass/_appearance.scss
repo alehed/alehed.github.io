@@ -2,6 +2,9 @@
  * Header
  */
 .site-header {
+    background: -webkit-linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
+    background: -o-linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
+    background: -moz-linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
     background: linear-gradient($background-blue-light 10%, $background-blue-dark 90%);
 }
 
@@ -62,6 +65,8 @@
  */
 .main-content {
     border: 1px solid $color-grey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: $background-color-light;
 }
