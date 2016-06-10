@@ -1,45 +1,29 @@
 /**
  * Device Screenshots
  */
-.landscape-device {
-    position: relative;
-    float: inherit;
-
-    .landscape-screenshot {
-        position: absolute;
-        padding: inherit;
-        width: 255px;
-        height: 191px;
-        left: 30px;
-        top: 16px;
-    }
+.landscape-screenshot {
+    background: url("/assets/landscape.png") no-repeat;
+    display: inline-block;
+    width: 253px;
+    height: 190px;
+    padding: 16px 30px;
 
     @include media-query($on-portable) {
-        > img {
-            width: 260px;
-        }
-
-        .landscape-screenshot {
-            width: 210px;
-            height: 158px;
-            left: 25px;
-            top: 13px;
-        }
+        background-size: 260px;
+        width: 210px;
+        height: 158px;
+        padding: 13px 25px;
     }
 
     @include media-query($on-mobile) {
-        > img {
-            width: 200px;
-        }
-
-        .landscape-screenshot {
-            width: 164px;
-            height: 122px;
-            left: 19px;
-            top: 10px;
-        }
+        background-size: 200px;
+        width: 164px;
+        height: 122px;
+        padding: 10px 19px;
     }
 }
+
+
 
 .content-image {
     float: left;

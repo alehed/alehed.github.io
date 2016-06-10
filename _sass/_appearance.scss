@@ -11,7 +11,7 @@
 .site-title {
     font-size: 72px;
     // font-weight: 300;
-    font-family: "FONTSPRING DEMO - Carnac Thin";
+    font-family: "Carnac Thin";
     color: $color-blue-dark;
 
     @include media-query($on-portable) {
@@ -21,10 +21,8 @@
 
 .site-subtitle {
     font-size: 26px;
-    // font-weight: 500;
     font-style: italic;
     font-weight: bold;
-    font-family: "FONTSPRING DEMO - Carnac";
     color: $color-blue-light;
 
     @include media-query($on-portable) {
@@ -49,7 +47,7 @@
  */
 .nav-bar {
     font-size: 1.1em;
-    font-family: "FONTSPRING DEMO - Carnac Medium";
+    font-family: "Carnac Medium";
     border-bottom: 1px solid $color-grey;
 
     .page-self-link {
@@ -71,13 +69,6 @@
     background-color: $background-color-light;
 }
 
-.page {
-    h2 {
-        // font-size: 32px;
-        font-family: "FONTSPRING DEMO - Carnac Light";
-
-        // @include media-query($on-portable) {
-        //     font-size: 28px;
-        // }
-    }
+.page h2 {
+    font-family: "Carnac Light";
 }
