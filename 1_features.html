@@ -9,16 +9,16 @@ permalink: /features/
     {% if feature.image_name %}
       <div class="feature">
         {% if image_left == true %}
-          {% include feature-content.html side="left"%}
+          {% include feature_content.html side="left"%}
           {% assign image_left = false %}
         {% else %}
-          {% include feature-content.html side="right"%}
+          {% include feature_content.html side="right"%}
           {% assign image_left = true %}
         {% endif %}
       </div>
     {% else %}
       <div class="feature text-feature">
-        {% include feature-content.html side="none"%}
+        {% include feature_content.html side="none"%}
       </div>
     {% endif %}
   {% endfor %}
