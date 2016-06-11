@@ -18,7 +18,7 @@ image-asset-path: "/assets/Images/"
 timezone: Europe/Zurich
 github_username: alehed
 app_released: false
-app_store_url: "https://itunes.apple.com/ch/app/itunes-u/id490217893?l=en&mt=8" # change!
+app_store_url: "https://itunes.apple.com/ch/app/itunes-u/id490217893?l=en&mt=8"
 
 # Build settings
 markdown: kramdown
