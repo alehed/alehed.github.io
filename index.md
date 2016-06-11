@@ -13,4 +13,10 @@ It's main features are:
 * Git Integration
 * Syntax Highlighting
 
+{% if site.app_released %}
+
 {% include app_store_badge.html url=site.app_store_url %}
+
+{% else %}
+Coming Soon!
+{% endif %}

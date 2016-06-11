@@ -5,7 +5,9 @@ permalink: /about/
 
 ## About me
 
-I'm a student at the ETH Zürich who loves to code.
+I am currently a student at the ETH Zürich majoring in Electrical Engineering.
+
+When I first got an iPad I was disappointed that there was no decent way to write and edit programs on it. So I decided to write my own code editor.
 
 ## Support
 
