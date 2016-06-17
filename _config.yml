@@ -11,7 +11,7 @@ tagline: the mobile code editor
 email: ahedges(at)ethz.ch
 description: >
   NautilusCode the mobile code editor. With full git integration it lets
-  you integrate your iPad into your development workflow.
+  you integrate your iPad into the development workflow.
 baseurl: ""
 url: "http://www.nautiluscode.ch" # the base hostname & protocol for your site
 image-asset-path: "/assets/Images/"
