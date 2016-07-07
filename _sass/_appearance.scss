@@ -70,4 +70,7 @@
 
 .page h2 {
     font-weight: 400;
+    &:not(:first-child) {
+        margin-top: $spacing-unit;
+    }
 }
