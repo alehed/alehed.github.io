@@ -22,6 +22,11 @@ contact me at {{ site.email }}.
 The icon started out as a stylized capital C which gradually evolved into what
 you can see now. I kept referring to the app as “Nautilus” and the name stuck.
 
+### What kind of git hosting services does it support?
+
+GitHub, GitLab CE, GitLab.com and Bitbucket have all been tested with the app.
+But it should be able to clone any repository provided via https.
+
 ### How can you move a document or folder to a different project?
 
 Tap and hold its thumbnail.
