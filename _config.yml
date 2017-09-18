@@ -17,7 +17,6 @@ url: "http://www.nautiluscode.ch" # the base hostname & protocol for your site
 image-asset-path: "/assets/Images/"
 timezone: Europe/Zurich
 github_username: alehed
-app_released: false
 app_store_url: "https://itunes.apple.com/ch/app/nautiluscode/id1128900887?l=en&mt=8"
 
 # Build settings
